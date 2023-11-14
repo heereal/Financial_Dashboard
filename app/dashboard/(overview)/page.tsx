@@ -4,6 +4,7 @@ import RevenueChart from '../../ui/dashboard/revenue-chart';
 import { lusitana } from '@/app/ui/fonts';
 import { Suspense } from 'react';
 import {
+  CardsSkeleton,
   LatestInvoicesSkeleton,
   RevenueChartSkeleton,
 } from '@/app/ui/skeletons';
@@ -20,7 +21,7 @@ export default async function Page() {
         Dashboard
       </h1>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <Suspense>
+        <Suspense fallback={<CardsSkeleton />}>
           <Cards />
         </Suspense>
       </div>
