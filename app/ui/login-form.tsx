@@ -22,8 +22,8 @@ export default function LoginForm() {
         </h1>
 
         {/* Added for accessing the dashboard page */}
-        <p className="mb-4">You can log in with the following credentials.</p>
-        <p className="mb-2">Email: user@nextmail.com</p>
+        <p className="mb-2">You can log in with the following credentials.</p>
+        <p className="mb-1">Email: user@nextmail.com</p>
         <p>Password: 123456</p>
 
         <div className="w-full">
